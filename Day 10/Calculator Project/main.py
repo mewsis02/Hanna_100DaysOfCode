@@ -36,6 +36,7 @@ for each_operation in operations:
 
 run_calculator = True
 while run_calculator:
+    print("\n")
     base_number = float(input("What is your first number? "))
 
     keep_calculating = True
@@ -48,13 +49,17 @@ while run_calculator:
 
         yes_or_no = ""
         while yes_or_no != "yes/no":
-            yes_or_no = input(f"Keep calculating with {answer}, or not? yay or nay? ").lower()
+            yes_or_no = input(f"Keep calculating with {answer}, or not? yay, nay, or quit? ").lower()
             if yes_or_no == "nay":
                 yes_or_no = "yes/no"
                 keep_calculating = False
             elif yes_or_no == "yay":
                 yes_or_no = "yes/no"
                 keep_calculating = True
-            elif yes_or_no != "yay":
+            elif yes_or_no == "quit":
+                yes_or_no = "yes/no"
+                keep_calculating = False
+                run_calculator = False
+            else:
                 print("\nThat is an invalid answer.")
-    print("\n")
+print("Goodbye For Now :3")
