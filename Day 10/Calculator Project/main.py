@@ -44,14 +44,12 @@ while run_calculator:
         new_operation = input(f"Which Operation ({display_operations})? ")
         second_number = float(input("What is your next number? "))
         answer = operations[new_operation](base_number, second_number)
-        if new_operation == "-":
-            if second_number < 0:
-                second_number -= (second_number + second_number)
-                new_operation = "+"
-        if new_operation == "+":
-            if second_number < 0:
-                second_number -= (second_number + second_number)
-                new_operation = "-"
+        if new_operation == "-" and second_number < 0:
+            second_number -= (second_number + second_number)
+            new_operation = "+"
+        if new_operation == "+" and second_number < 0:
+            second_number -= (second_number + second_number)
+            new_operation = "-"
         print(f"\n{base_number} {new_operation} {second_number} = {answer}")
         base_number = answer
 
