@@ -5,7 +5,7 @@ print(art.logo)
 
 print("Welcome To Hanna Guesses!")
 print("In this game, You will guess a number between 1 and 100,")
-difficulty = input("but first, would you like to play easy, normal or hard? ")
+difficulty = input("but first, would you like to play easy, normal or hard? ").lower()
 starting_num_of_guesses = 0
 
 if difficulty == "easy":
