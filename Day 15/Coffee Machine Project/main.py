@@ -48,15 +48,16 @@ while runCoffeeMachine:
     new_drink = input("What would you like? (espresso/latte/cappuccino): ").lower()
     if new_drink == "off":
         runCoffeeMachine = False
+        print(f"We made ${"%.2f" % money}! Yay!")
     elif new_drink == "refill":
         refill_resource = input("Which resource to be refilled? (water/milk/coffee): ").lower()
         if refill_resource == "coffee" or refill_resource == "water" or refill_resource == "milk":
-            if money >= 1:
-                money -= 1
+            if money >= 1.50:
+                money -= 1.50
                 resources[refill_resource] += refill_amount[refill_resource]
-                print(f"You lost $1, but got {refill_amount[refill_resource]}ml of {refill_resource} refilled!")
+                print(f"You lost $1.50, but got {refill_amount[refill_resource]}ml of {refill_resource} refilled!")
             else:
-                print("I am sorry, but that requires $1. Please come back later.")
+                print("I am sorry, but that requires $1.50. Please come back later.")
         else:
             print("I am sorry, but that resource does not exist. Please try again later.")
 
@@ -83,4 +84,3 @@ while runCoffeeMachine:
                       f"The {new_drink} requires ${"%.2f" % MENU[new_drink]["cost"]}!")
     else:
         print("That drink does not exist!")
-print(f"We made ${"%.2f" % money}! Yay!")
