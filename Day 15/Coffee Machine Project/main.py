@@ -51,7 +51,7 @@ while runCoffeeMachine:
         print(f"We made ${"%.2f" % money}! Yay!")
     elif new_drink == "refill":
         refill_resource = input("Which resource to be refilled? (water/milk/coffee): ").lower()
-        if refill_resource == "coffee" or refill_resource == "water" or refill_resource == "milk":
+        if refill_resource == "water" or refill_resource == "milk" or refill_resource == "coffee":
             if money >= 1.50:
                 money -= 1.50
                 resources[refill_resource] += refill_amount[refill_resource]
