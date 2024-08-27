@@ -17,6 +17,7 @@ table = PrettyTable()
 
 pokemon_names = ["Pikachu", "Squirtle", "Charmander"]
 pokemon_types = ["Electric", "Water", "Fire"]
+
 # Adds 2 columns, named Pokémon Name and Type, to the PrettyTable
 table.add_column("Pokemon Name", pokemon_names)
 table.add_column("Type", pokemon_types)
