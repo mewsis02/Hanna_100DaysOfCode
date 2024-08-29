@@ -1,4 +1,3 @@
-
 # DAY 16 : Object-Oriented Programming
 
 # from turtle import Turtle, Screen
