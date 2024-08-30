@@ -38,5 +38,5 @@ Day 13:
 Day 14:
 Day 15:
 Day 16: OOP Coffee Machine
-Day 17:
+Day 17: Quiz Game
 -------------------------> PROJECT NAMES <-------------------------
