@@ -20,6 +20,7 @@ Day 15: (no lessons were made this day)
 Day 16: Object-Oriented Programming
 Day 17: Creating Classes
 Day 18: Turtle Graphics, Tuples, and Importing Modules
+Day 19: More Turtle Graphics, Event Listeners, State, and Multiple Instances
 -------------------------> LESSON NAMES <-------------------------
 
 -------------------------> PROJECT NAMES <-------------------------
@@ -41,4 +42,5 @@ Day 15: Coffee Machine (without OOP)
 Day 16: Coffee Machine (with    OOP)
 Day 17: Quiz Game
 Day 18: My Hirst Painting
+Day 19: The Turtle Race
 -------------------------> PROJECT NAMES <-------------------------
